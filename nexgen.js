@@ -1,9 +1,20 @@
-const array = [-5, 2, 4, 6, 10];
+const array1 = ['a', 'b', 'c', 'd'];
+const array2 = ['x', 'y', 'a'];
 
-function benkai (array){
+function commonElement(arr1, arr2){
 
-    for (let i in array ){
-
-        
+    for(let i=0; i< arr1.length; i++){
+     for(let j=0; j< arr2.length; j++){
+       if(arr1[i] === arr2[j]){
+          return true;
+      
+         
+      }
     }
+
+   }
+   return false;
 }
+
+console.log(commonElement(array1, array2))
+
